@@ -7,5 +7,5 @@ def my_all?(collection)
             newarray << yield(collection[i])
             i = i + 1
       end
-      newarray
+      newarray.any? { |e| e == false } ? false : true
 end
